@@ -1,0 +1,2 @@
+
+./my_tests --input ../../running-files/1337_1337_1337_in.bin --output ../../running-files/out.bin --device-type dgpu --device-index 0

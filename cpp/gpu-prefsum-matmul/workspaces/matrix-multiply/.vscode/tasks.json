@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build debug-asan",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "debug-asan"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "release"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Execute release",
+            "command": "./build/release/my_tests",
+            "type": "shell",
+            "args": [
+                "--input",
+                "./running-files/g-matrices.bin",
+                "--output",
+                "./running-files/out.bin"
+            ],
+            "dependsOn": "Build release",
+            "problemMatcher": []
+        },
+        {
+            "label": "Execute debug asan",
+            "command": "./build/debug-asan/my_tests",
+            "type": "shell",
+            "args": [
+                "--input",
+                "./running-files/g-matrices.bin",
+                "--output",
+                "./running-files/out.bin",
+                "--verify",
+            ],
+            "dependsOn": "Build debug-asan",
+            "problemMatcher": []
+        }
+    ]
+}

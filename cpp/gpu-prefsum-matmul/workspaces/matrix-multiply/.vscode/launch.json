@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run my_tests",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/release/my_tests",
+      "args": [
+        "--input",
+        "${workspaceFolder}/running-files/1337_1337_1337_in.bin",
+        "--output",
+        "${workspaceFolder}/running-files/out.bin",
+        "--device-type",
+        "dgpu",
+        "--device-index",
+        "0"
+      ],
+      "cwd": "${workspaceFolder}/build/release",
+      "MIMode": "lldb",
+      "preLaunchTask": "CMake: build"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# ProfilerVersion=5.7.0
+# Application=C:/Users/skkv_service_0/TESTER_runners/skkv-mp/actions-runner/_work/ct-gpu-26-matmul-opencl-BogdanPerepelkin/ct-gpu-26-matmul-opencl-BogdanPerepelkin/__test.exe
+# ApplicationArgs=--input C:\Users\skkv_service_0\TESTER_runners\skkv-mp\actions-runner\ref_test_data\matmul_in.bin --output ..\matmul_out_rcprof.bin --device-type dgpu --device-index 0 --realization 2
+# ListSeparator=,
+# KernelCount=1
+Thread ID,Kernel Name,Device Name,Number of compute units,Max. number of wavefronts per CU,Max. number of work-group per CU,Max. number of VGPR,Max. number of SGPR,Max. amount of LDS,Number of VGPR used,Number of SGPR used,Amount of LDS used,Size of wavefront,Work-group size,Wavefronts per work-group,Max work-group size,Max wavefronts per work-group,Global work size,Maximum global work size,Nbr VGPR-limited waves,Nbr SGPR-limited waves,Nbr LDS-limited waves,Nbr of WG-limited waves,Kernel occupancy,Graphics IP Version,Number of SIMDs per CU
+2548,mul,gfx1010:xnack-,20,80,32,256,104,131072,95,45,8704,32,128,4,256,8,393216,1073741824,40,80,60,80,50,10,4
